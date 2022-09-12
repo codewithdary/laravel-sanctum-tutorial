@@ -1,5 +1,5 @@
 # Laravel Sanctum Tutorial
-This is the official repository for my [Laravel Sanctum - tutorial]() which is available on YouTube.
+This is the official repository for my [Laravel Sanctum - tutorial]() which is available on YouTube. <br>
 •	Author: Code With Dary <br>
 •	Twitter: [@codewithdary](https://twitter.com/codewithdary) <br>
 •	Instagram: [@codewithdary](https://www.instagram.com/codewithdary/) <br>

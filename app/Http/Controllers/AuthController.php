@@ -8,6 +8,7 @@ use App\Traits\HttpResponses;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use \App\Http\Requests\StoreUserRequest;
 
 class AuthController extends Controller
 {
@@ -29,7 +30,7 @@ class AuthController extends Controller
         ]);
     }
 
-    public function register(Request $request) 
+    public function register(StoreUserRequest $request)
     {
         $request->validated($request->only(['name', 'email', 'password']));
 
@@ -45,7 +46,7 @@ class AuthController extends Controller
         ]);
     }
 
-    public function logout() 
+    public function logout()
     {
         Auth::user()->currentAccessToken()->delete();
 
